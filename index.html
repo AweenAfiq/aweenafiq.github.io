@@ -1,216 +1,159 @@
-<!DOCTYPE html>
+<!--Banyak sangat keje woi..mane sempattt!-->
+<!doctype html>
 <html lang="ms">
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <meta name="description" content="Wedding website for Aween & Afiq Xilantra">
+    <meta name="description" content="Wedding website for Afiq Xilantra & Aween">
     <meta name="author" content="Afiq Xilantra">
     <!-- FB -->
-    <meta property="og:url"           content="http://aweenafiq.com" />
-    <meta property="og:type"          content="website" />
-    <meta property="og:title"         content="Walimatul Urus - Aween & Afiq" />
-    <meta property="og:description"   content="Website rasmi walimatul urus Aween & Afiq Xilantra." />
-    <meta property="og:image"         content="http://aweenafiq.com/assets/img/hero-bg.jpg" />
-      
+    <meta property="og:url"           content="http://aweenafiq.com"/>
+    <meta property="og:type"          content="website"/>
+    <meta property="og:title"         content="Walimatul Urus - Afiq & Aween"/>
+    <meta property="og:description"   content="Website untuk walimatul urus Afiq & Aween!"/>
+    <meta property="og:image"         content="http://aweenafiq.com/assets/img/hero-bg.jpg"/>
+            
     <link rel="icon" href="favicon.ico">
-    <title>Walimatul Urus - Aween &amp; Afiq</title>
+    <title>✨Walimatul Urus - Afiq &amp; Aween</title>
 
-    <!-- Bootstrap core CSS -->
-    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,700' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="assets/css/bootstrap4.css">
-    <link rel="stylesheet" href="assets/css/animate.css">
-    <link rel="stylesheet" href="assets/css/pace.css">
 
-    <!-- Custom styles for this template -->
-    <link href="assets/css/style.css" rel="stylesheet">
+  <!-- Web Application Manifest -->
+  <link rel="manifest" href="manifest.json">
 
-      <style>
-      html,
-body {
-  height: 100%;
-  background-color: #333;
-    background-image: url(/assets/img/hero-bg.jpg);
-    background-position: center center;
-    background-size: cover;
-    background-attachment: fixed
-}
-
-body {
-  color: #fff;
-  text-align: center;
-  text-shadow: 0 .05rem .1rem rgba(0,0,0,.5);
-}
-      </style>
+  <link rel="apple-touch-icon" sizes="57x57" href="/apple-touch-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="/apple-touch-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="/apple-touch-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="/apple-touch-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="/apple-touch-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="/apple-touch-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="/apple-touch-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="/apple-touch-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon-180x180.png">
+<link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="/android-chrome-192x192.png" sizes="192x192">
+<link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96">
+<link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
+<link rel="manifest" href="/manifest.json">
+<meta name="apple-mobile-web-app-title" content="#AweenAfiq">
+<meta name="application-name" content="#AweenAfiq">
+<meta name="msapplication-TileColor" content="#ffd700">
+<meta name="msapplication-TileImage" content="/mstile-144x144.png">
+<meta name="theme-color" content="#ffd700">
       
-    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-    <script src="assets/js/ie10-viewport-bug-workaround.js"></script>
-  </head>
+  <!-- build:css styles/main.css -->
+  <link rel="stylesheet" href="styles/main.css">
+  <!-- endbuild-->
 
-  <body class="home">
+  <!-- build:js bower_components/webcomponentsjs/webcomponents.min.js -->
+  <script src="bower_components/webcomponentsjs/webcomponents-lite.js"></script>
+  <!-- endbuild -->
 
-    <div class="site-wrapper">
-      <div class="site-wrapper-inner">
-        <div class="cover-container">
-          <div class="masthead clearfix"> 
-            <div class="inner">
-              <h3 class="masthead-brand hidden-md-up">
-                  <a href="/">
-                      <svg class="svg-icon masterhead-icon" viewBox="0 0 20 20">
-                          <path fill="none" d="M10.544,8.717l1.166-0.855l1.166,0.855l-0.467-1.399l1.012-0.778h-1.244L11.71,5.297l-0.466,1.244H10l1.011,0.778L10.544,8.717z M15.986,9.572l-0.467,1.244h-1.244l1.011,0.777l-0.467,1.4l1.167-0.855l1.165,0.855l-0.466-1.4l1.011-0.777h-1.244L15.986,9.572z M7.007,6.552c0-2.259,0.795-4.33,2.117-5.955C4.34,1.042,0.594,5.07,0.594,9.98c0,5.207,4.211,9.426,9.406,9.426c2.94,0,5.972-1.354,7.696-3.472c-0.289,0.026-0.987,0.044-1.283,0.044C11.219,15.979,7.007,11.759,7.007,6.552 M10,18.55c-4.715,0-8.551-3.845-8.551-8.57c0-3.783,2.407-6.999,5.842-8.131C6.549,3.295,6.152,4.911,6.152,6.552c0,5.368,4.125,9.788,9.365,10.245C13.972,17.893,11.973,18.55,10,18.55 M19.406,2.304h-1.71l-0.642-1.71l-0.642,1.71h-1.71l1.39,1.069l-0.642,1.924l1.604-1.176l1.604,1.176l-0.642-1.924L19.406,2.304z"></path>
-                      </svg>
-                  </a>
-                </h3>
-              <nav class="nav nav-masthead">
-                <a class="nav-link active" href="/" title="Laman Utama">Utama</a>
-                <a class="nav-link" href="/library" title="Bahan bacaan & rujukan perkahwinan">Percuma</a>
-                <a class="nav-link" href="/help" title="Perlukan bantuan?">Bantuan</a>
-              </nav>
-            </div>
-          </div>
+  <!-- will be replaced with elements/elements.vulcanized.html -->
+  <link rel="import" href="elements/elements.html">
+  <!-- endreplace-->
 
-          <div class="inner cover animated fadeInUp">
-              <p class="gold">Walimatul Urus</p>
-              <hr> 
-              <h1 class="cover-heading display-1">Aween &amp; Afiq</h1>
-              <p class="lead">13 . 9 | 26 . 9</p>
-              <p class="lead tahun">2015</p>
-            <!--
-<p class="lead">
-              <a href="#" class="btn btn-lg btn-secondary">Lagi</a>
-            </p>
---->
-          </div>            
-        </div>
-                      <svg class="svg-icon svg-big m-t-md svg-samar" viewBox="0 0 20 20">
-							<path d="M13.962,8.885l-3.736,3.739c-0.086,0.086-0.201,0.13-0.314,0.13S9.686,12.71,9.6,12.624l-3.562-3.56C5.863,8.892,5.863,8.611,6.036,8.438c0.175-0.173,0.454-0.173,0.626,0l3.25,3.247l3.426-3.424c0.173-0.172,0.451-0.172,0.624,0C14.137,8.434,14.137,8.712,13.962,8.885 M18.406,10c0,4.644-3.763,8.406-8.406,8.406S1.594,14.644,1.594,10S5.356,1.594,10,1.594S18.406,5.356,18.406,10 M17.521,10c0-4.148-3.373-7.521-7.521-7.521c-4.148,0-7.521,3.374-7.521,7.521c0,4.147,3.374,7.521,7.521,7.521C14.148,17.521,17.521,14.147,17.521,10"></path>
-						</svg>
+<!-- Open when final -->  
+  <!--link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,700' rel='stylesheet' type='text/css'-->
+    <link rel="stylesheet" href="styles/pace.css">
+      
+</head>
 
+<body unresolved class="fullbleed layout vertical">
+  <template is="dom-bind" id="app">
+
+    <paper-drawer-panel id="paperDrawerPanel" forceNarrow>
+      <div drawer>
+
+        <!-- Drawer Toolbar -->
+        <paper-toolbar id="drawerToolbar">
+          <span>🎉</span>
+        </paper-toolbar>
+
+        <!-- Drawer Content -->
+          <paper-menu class="list" attr-for-selected="data-route" selected="{{route}}">
+              <a data-route="home" href="/">
+                <iron-icon icon="home"></iron-icon>
+                <span>Home</span>
+              </a>
+
+              <a data-route="help" href="/help">
+                <iron-icon icon="info"></iron-icon>
+                <span>Help</span>
+              </a>
+
+              <a data-route="contact" href="/contact">
+                <iron-icon icon="mail"></iron-icon>
+                <span>Contact</span>
+              </a>
+          </paper-menu>
       </div>
-    </div>
-      
-    <div class="container-fluid cards-sect">
-        <div class="row text-left">
-            <div class="col-md-4 sm-center">
-                <div class="card card-inverse">
-                    <div class="card-block">
-                        <h3 class="card-title">Aturcara</h3>
-                        <p class="card-text">Tema, panduan serta peta untuk kedua belah majlis kami.</p>
-                        <a href="events" class="btn btn-primary">Ok go!</a>
+      <paper-header-panel main>
+        <!-- Main Toolbar -->
+        <paper-toolbar id="mainToolbar" style="box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0), 0 2px 9px 1px rgba(0, 0, 0, 0), 0 4px 2px -2px rgba(0, 0, 0, 0)">
+          <paper-icon-button icon="menu" paper-drawer-toggle></paper-icon-button>
+          <span class="flex"></span>
+
+          <!-- Toolbar icons -->
+          <paper-icon-button icon="more-vert"></paper-icon-button>
+          <div class="middle"></div>
+        </paper-toolbar>
+
+        <!-- Main Content -->
+          <iron-pages attr-for-selected="data-route" selected="{{route}}">
+
+        <!--HOME-->
+            <section data-route="home">
+                <my-salam></my-salam>
+                <div class="horizontal  layout wrap  center-justified" style="height: 80vh; margin-top: 33vh">
+                    <instagram-gallery></instagram-gallery>
+                    <my-email></my-email>
+                    <div class="berdua">
+                        <majlis-bersanding></majlis-bersanding>
+                        <my-bertandang></my-bertandang>
                     </div>
                 </div>
-            </div>
-            <div class="col-md-4 sm-center">
-                <div class="card card-inverse">
-                  <div class="card-block">
-                    <h3 class="card-title">Galeri #aweenafiq</h3>
-                    <p class="card-text">Koleksi gambar dari Instagram dengan hashtag #aweenafiq</p>
-                    <a href="gallery" class="btn btn-primary">Ok go!</a>
-                  </div>
-                </div>
-            </div>
-            <div class="col-md-4 sm-center">
-              <div class="card card-inverse">
-                <div class="card-block">
-                  <h3 class="card-title">Blog</h3>
-                  <p class="card-text">Tips dan pengalaman dalam persiapan kahwin kami.</p>
-                  <a href="blog" class="btn btn-primary">Ok go!</a>
-                </div>
-              </div>
-            </div>
-        </div>
+            </section>
 
-<!-- Begin MailChimp Signup Form -->
-<div id="mc_embed_signup" class="row request-invite text-center">
-<form action="//aweenafiq.us11.list-manage.com/subscribe/post?u=506e8cf629fd7b4e48b85dac9&amp;id=ca5d1deca3" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-    <div id="mc_embed_signup_scroll">
-	<h2>Jemputan</h2>
-    <small>Jemputan adalah terhad, sila hantarkan nama anda untuk diletakkan didalam senarai pilih kami.</small>
-        <br>
-        <br>
-<div class="mc-field-group col-lg-6">
-    <label class="sr-only" for="mce-FNAME">Name</label>
-	<input type="text" value="" name="FNAME" class="form-control" id="mce-FNAME" placeholder="Nama">
-</div>
-<div class="mc-field-group col-lg-3">
-    <label class="sr-only" for="mce-EMAIL">Email address</label>
-	<input type="email" value="" name="EMAIL" class="required email form-control" id="mce-EMAIL" placeholder="email@contoh.com">
-</div>
-	<div id="mce-responses" class="clear">
-		<div class="response" id="mce-error-response" style="display:none"></div>
-		<div class="response" id="mce-success-response" style="display:none"></div>
-	</div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-    <div style="position: absolute; left: -5000px;"><input type="text" name="b_506e8cf629fd7b4e48b85dac9_ca5d1deca3" tabindex="-1" value=""></div>
-    <div class="clear col-lg-3"><input type="submit" value="Hantar" name="subscribe" id="mc-embedded-subscribe" class="btn btn-secondary"></div>
-    </div>
-</form>
-</div>
-<!--End mc_embed_signup-->              
+            <section data-route="help">
+              <paper-material elevation="1">
+                <h2 class="paper-font-display2">Nak tido</h2>
+                <p>Nak tido</p>
+                <p><a href="/help/map">Map</a></p>
+              </paper-material>
+            </section>
 
-        <div class="row">
-            <div class="kontena">
-                <div class="bulat">
-                <a href="order" title="Ok go!">
-                    <svg class="svg-icon" viewBox="0 0 20 20">
-				        <path fill="none" d="M7.93,4.509H9.62v1.689c0,0.233,0.189,0.422,0.422,0.422s0.422-0.189,0.422-0.422V4.509h1.689c0.233,0,0.423-0.189,0.423-0.422s-0.189-0.422-0.423-0.422h-1.689V1.975c0-0.233-0.189-0.422-0.422-0.422S9.62,1.742,9.62,1.975v1.689H7.93c-0.233,0-0.422,0.189-0.422,0.422S7.697,4.509,7.93,4.509 M18.489,8.311H1.595c-0.466,0-0.845,0.378-0.845,0.845V10c0,0.466,0.378,0.845,0.845,0.845h0.169l1.533,7.282l0.007-0.001c0.046,0.183,0.205,0.321,0.402,0.321h12.67c0.198,0,0.356-0.139,0.403-0.321l0.007,0.001l1.533-7.282h0.169c0.466,0,0.845-0.379,0.845-0.845V9.155C19.334,8.689,18.955,8.311,18.489,8.311 M2.626,10.845H5.53l0.266,1.689H2.982L2.626,10.845z M3.16,13.379h2.769l0.267,1.689H3.515L3.16,13.379z M4.049,17.603l-0.355-1.689h2.636l0.267,1.689H4.049z M9.62,17.603H7.441l-0.267-1.689H9.62V17.603z M9.62,15.068H7.041l-0.267-1.689H9.62V15.068z M9.62,12.534H6.641l-0.266-1.689H9.62V12.534z M12.644,17.603h-2.179v-1.689h2.446L12.644,17.603zM13.043,15.068h-2.579v-1.689h2.845L13.043,15.068z M10.464,12.534v-1.689h3.245l-0.266,1.689H10.464z M16.035,17.603h-2.548l0.268-1.689h2.636L16.035,17.603z M16.569,15.068h-2.682l0.267-1.689h2.77L16.569,15.068z M17.103,12.534h-2.814l0.267-1.689h2.903L17.103,12.534z M18.489,10H1.595V9.155h16.895V10z"></path>
-						</svg>
-                    <small>Need a wedding website?</small>
-                    </a>
-                </div>
-                <div class="bulat"><a href="wishlist" title="Wishlist">
-                    <svg class="svg-icon" viewBox="0 0 20 20">
-							<path d="M9.719,17.073l-6.562-6.51c-0.27-0.268-0.504-0.567-0.696-0.888C1.385,7.89,1.67,5.613,3.155,4.14c0.864-0.856,2.012-1.329,3.233-1.329c1.924,0,3.115,1.12,3.612,1.752c0.499-0.634,1.689-1.752,3.612-1.752c1.221,0,2.369,0.472,3.233,1.329c1.484,1.473,1.771,3.75,0.693,5.537c-0.19,0.32-0.425,0.618-0.695,0.887l-6.562,6.51C10.125,17.229,9.875,17.229,9.719,17.073 M6.388,3.61C5.379,3.61,4.431,4,3.717,4.707C2.495,5.92,2.259,7.794,3.145,9.265c0.158,0.265,0.351,0.51,0.574,0.731L10,16.228l6.281-6.232c0.224-0.221,0.416-0.466,0.573-0.729c0.887-1.472,0.651-3.346-0.571-4.56C15.57,4,14.621,3.61,13.612,3.61c-1.43,0-2.639,0.786-3.268,1.863c-0.154,0.264-0.536,0.264-0.69,0C9.029,4.397,7.82,3.61,6.388,3.61"></path>
-						</svg>
-                    <small>Our Wishlist!</small></a></div>
-                <div class="bulat"><a href="sponsor" title="">
-                    <svg class="svg-icon" viewBox="0 0 20 20">
-							<path fill="none" d="M5.229,6.531H4.362c-0.239,0-0.434,0.193-0.434,0.434c0,0.239,0.194,0.434,0.434,0.434h0.868c0.24,0,0.434-0.194,0.434-0.434C5.663,6.724,5.469,6.531,5.229,6.531 M10,6.531c-1.916,0-3.47,1.554-3.47,3.47c0,1.916,1.554,3.47,3.47,3.47c1.916,0,3.47-1.555,3.47-3.47C13.47,8.084,11.916,6.531,10,6.531 M11.4,11.447c-0.071,0.164-0.169,0.299-0.294,0.406c-0.124,0.109-0.27,0.191-0.437,0.248c-0.167,0.057-0.298,0.09-0.492,0.098v0.402h-0.35v-0.402c-0.21-0.004-0.352-0.039-0.527-0.1c-0.175-0.064-0.324-0.154-0.449-0.27c-0.124-0.115-0.221-0.258-0.288-0.428c-0.068-0.17-0.1-0.363-0.096-0.583h0.664c-0.004,0.259,0.052,0.464,0.169,0.613c0.116,0.15,0.259,0.229,0.527,0.236v-1.427c-0.159-0.043-0.268-0.095-0.425-0.156c-0.157-0.061-0.299-0.139-0.425-0.235C8.852,9.752,8.75,9.631,8.672,9.486C8.594,9.34,8.556,9.16,8.556,8.944c0-0.189,0.036-0.355,0.108-0.498c0.072-0.144,0.169-0.264,0.292-0.36c0.122-0.097,0.263-0.17,0.422-0.221c0.159-0.052,0.277-0.077,0.451-0.077V7.401h0.35v0.387c0.174,0,0.29,0.023,0.445,0.071c0.155,0.047,0.29,0.118,0.404,0.212c0.115,0.095,0.206,0.215,0.274,0.359c0.067,0.146,0.103,0.315,0.103,0.508H10.74c-0.007-0.201-0.06-0.354-0.154-0.46c-0.096-0.106-0.199-0.159-0.408-0.159v1.244c0.174,0.047,0.296,0.102,0.462,0.165c0.167,0.063,0.314,0.144,0.443,0.241c0.128,0.099,0.23,0.221,0.309,0.366c0.077,0.146,0.116,0.324,0.116,0.536C11.509,11.092,11.473,11.283,11.4,11.447 M18.675,4.795H1.326c-0.479,0-0.868,0.389-0.868,0.868v8.674c0,0.479,0.389,0.867,0.868,0.867h17.349c0.479,0,0.867-0.389,0.867-0.867V5.664C19.542,5.184,19.153,4.795,18.675,4.795M1.76,5.664c0.24,0,0.434,0.193,0.434,0.434C2.193,6.336,2,6.531,1.76,6.531S1.326,6.336,1.326,6.097C1.326,5.857,1.52,5.664,1.76,5.664 M1.76,14.338c-0.24,0-0.434-0.195-0.434-0.434c0-0.24,0.194-0.434,0.434-0.434s0.434,0.193,0.434,0.434C2.193,14.143,2,14.338,1.76,14.338 M18.241,14.338c-0.24,0-0.435-0.195-0.435-0.434c0-0.24,0.194-0.434,0.435-0.434c0.239,0,0.434,0.193,0.434,0.434C18.675,14.143,18.48,14.338,18.241,14.338 M18.675,12.682c-0.137-0.049-0.281-0.08-0.434-0.08c-0.719,0-1.302,0.584-1.302,1.303c0,0.152,0.031,0.297,0.08,0.434H2.981c0.048-0.137,0.08-0.281,0.08-0.434c0-0.719-0.583-1.303-1.301-1.303c-0.153,0-0.297,0.031-0.434,0.08V7.318c0.136,0.049,0.28,0.08,0.434,0.08c0.718,0,1.301-0.583,1.301-1.301c0-0.153-0.032-0.298-0.08-0.434H17.02c-0.049,0.136-0.08,0.28-0.08,0.434c0,0.718,0.583,1.301,1.302,1.301c0.152,0,0.297-0.031,0.434-0.08V12.682z M18.241,6.531c-0.24,0-0.435-0.194-0.435-0.434c0-0.24,0.194-0.434,0.435-0.434c0.239,0,0.434,0.193,0.434,0.434C18.675,6.336,18.48,6.531,18.241,6.531 M9.22,8.896c0,0.095,0.019,0.175,0.058,0.242c0.039,0.066,0.088,0.124,0.148,0.171c0.061,0.047,0.13,0.086,0.21,0.115c0.079,0.028,0.11,0.055,0.192,0.073V8.319c-0.21,0-0.322,0.044-0.437,0.132C9.277,8.54,9.22,8.688,9.22,8.896 M15.639,12.602h-0.868c-0.239,0-0.434,0.195-0.434,0.434c0,0.24,0.194,0.436,0.434,0.436h0.868c0.24,0,0.434-0.195,0.434-0.436C16.072,12.797,15.879,12.602,15.639,12.602 M10.621,10.5c-0.068-0.052-0.145-0.093-0.23-0.124c-0.086-0.031-0.123-0.06-0.212-0.082v1.374c0.209-0.016,0.332-0.076,0.465-0.186c0.134-0.107,0.201-0.281,0.201-0.516c0-0.11-0.02-0.202-0.062-0.277C10.743,10.615,10.688,10.551,10.621,10.5"></path>
-						</svg>
-                    <small>Sponsor / donate</small></a></div>
-                <div class="bulat share-button">
-                    <a href="#" title="">
-                        <small>Share Our Website</small>
-                    </a>
-                </div>
-            </div>
-        </div>
-        
-<!-- Footer -->
-      <footer>
-        <p class="pull-right"><a href="#">Back to top</a></p>
-        <p class="pull-left">&copy; 2015 Aween &middot; <a href="http://afiq.me" title="Afiq Xilantra Azmi">Afiq Xilantra</a></p>
-      </footer>
-</div>  <!-- Container -->
-     
-    <!-- Bootstrap core JavaScript-->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="assets/js/pace.min.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <script>window.jQuery || document.write('<script src="assets/js/jquery.min.js"><\/script>')</script>
-    <script src="assets/js/bootstrap.min.js"></script>
-    <script src="assets/js/ShareButton.min.js"></script>
-            
-      <script>
-     var share = new Share(".share-button", {
-  networks: {
-    facebook: {
-      before: function() {
-        this.url   = "http://aweenafiq.com";
-        this.text  = "Walimatul Urus - Aween & Afiq #aweenafiq";
-      },
-      after: function() {
-        console.log("User shared:", this.url);
-      }
-    }
-  }
-});
-      </script>
-<script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script><script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[1]='FNAME';ftypes[1]='text';fnames[0]='EMAIL';ftypes[0]='email';}(jQuery));var $mcj = jQuery.noConflict(true);</script>
-      
+            <section data-route="help-info">
+              <paper-material elevation="1">
+                <h2 class="paper-font-display2">
+                Nak tido:<span>{{params.name}}</span>
+                </h2>
+                <div>Nak tido <span>{{params.name}}</span> Nak tido</div>
+              </paper-material>
+            </section>
+
+            <section data-route="contact">
+              <paper-material elevation="1">
+                <h2 class="paper-font-display2">Nak tido</h2>
+                <p>Nak tido</p>
+              </paper-material>
+            </section>
+
+          </iron-pages>
+          </paper-header-panel>
+    </paper-drawer-panel>
+
+  </template>
+
+  <!-- build:js scripts/app.js -->
+  <script src="scripts/app.js"></script>
+  <script src="scripts/pace.min.js"></script>
+  <!-- endbuild-->
+    
+          <!--
       <script type="text/javascript">(function(d,e,j,h,f,c,b){d.GoogleAnalyticsObject=f;d[f]=d[f]||function(){(d[f].q=d[f].q||[]).push(arguments)},d[f].l=1*new Date();c=e.createElement(j),b=e.getElementsByTagName(j)[0];c.async=1;c.src=h;b.parentNode.insertBefore(c,b)})(window,document,"script","//www.google-analytics.com/analytics.js","ga");ga("create","UA-47488919-10","auto");ga("send","pageview");</script>
+-->
+    
+</body>
 
-     <!--IE10 viewport hack for Surface/desktop Windows 8 bug -->
-    <script src="assets/js/ie10-viewport-bug-workaround.js"></script>
-  </body>
 </html>

@@ -1,0 +1,44 @@
+<dom-module id="my-salam">
+    <style>
+      :host {
+        display: block;
+      }
+        h1 {margin: 0 auto}
+        hr{height:0;-webkit-box-sizing:content-box;box-sizing:content-box;border: 0;border-top: .0625rem solid #ffd700}
+
+small,
+.small {
+  font-size: 80%;
+  font-weight: normal;
+}
+
+    </style>
+  <template>
+    <div class="horizontal layout center-justified" style="height:60vh; text-align:center; color: #fff">
+      <div class="center self-end">
+          <small class="satu">Walimatul Urus</small>
+          <hr class="garis">
+          <h1 class="dua">Afiq &amp; Aween</h1>
+          <p class="tiga">13 . 9 | 26 . 9</p>
+      </div>
+    </div>
+  </template>
+</dom-module>
+
+  <script>
+  (function() {
+    Polymer({
+      is: 'my-salam',
+
+      properties: {
+        greeting: {
+          type: String,
+          value: 'Welcome',
+          notify: true
+        }
+      }
+    });
+    })();
+  </script>
+
+

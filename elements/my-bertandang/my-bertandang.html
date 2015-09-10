@@ -1,0 +1,40 @@
+<dom-module id="my-bertandang">
+    <style>
+        :root {display: block}
+        .kad-sendiri {max-width: 200px; max-height: 200px; width:100%; height: 100%;
+            -webkit-box-shadow: 0 0 10px 0 rgba(0,0,0,0.3);
+box-shadow: 0 0 10px 0 rgba(0,0,0,0.3);
+        background: url(/images/kenduri_kahwin_aween_afiq_xilantra.jpg) no-repeat;
+        background-size: cover
+        }
+    </style>
+    <template>
+        <div class="kad-sendiri" style="text-align: left; padding: 20px">
+            <h2>Majlis Bertandang</h2>
+                <div class="card-content">
+                    Tema, aturcara serta peta pada majlis 26 September ini.
+                </div>
+            <br>
+                <div class="card-actions">
+                    <paper-button id="my-button">Ok go!</paper-button>
+                </div>
+            
+        </div>
+    </template>
+</dom-module>
+
+<script>
+  (function() {
+    Polymer({
+      is: 'my-bertandang',
+
+      properties: {
+        greeting: {
+          type: String,
+          notify: true
+        }
+      }
+    });
+    })();
+  </script>
+
