@@ -1,0 +1,159 @@
+<!--Banyak sangat keje woi..mane sempattt!-->
+<!doctype html>
+<html lang="ms">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Wedding website for Afiq Xilantra & Aween">
+    <meta name="author" content="Afiq Xilantra">
+    <!-- FB -->
+    <meta property="og:url"           content="http://aweenafiq.com"/>
+    <meta property="og:type"          content="website"/>
+    <meta property="og:title"         content="Walimatul Urus - Afiq & Aween"/>
+    <meta property="og:description"   content="Website untuk walimatul urus Afiq & Aween!"/>
+    <meta property="og:image"         content="http://aweenafiq.com/assets/img/hero-bg.jpg"/>
+            
+    <link rel="icon" href="favicon.ico">
+    <title>✨Walimatul Urus - Afiq &amp; Aween</title>
+
+
+  <!-- Web Application Manifest -->
+  <link rel="manifest" href="manifest.json">
+
+  <link rel="apple-touch-icon" sizes="57x57" href="/apple-touch-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="/apple-touch-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="/apple-touch-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="/apple-touch-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="/apple-touch-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="/apple-touch-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="/apple-touch-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="/apple-touch-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon-180x180.png">
+<link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="/android-chrome-192x192.png" sizes="192x192">
+<link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96">
+<link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
+<link rel="manifest" href="/manifest.json">
+<meta name="apple-mobile-web-app-title" content="#AweenAfiq">
+<meta name="application-name" content="#AweenAfiq">
+<meta name="msapplication-TileColor" content="#ffd700">
+<meta name="msapplication-TileImage" content="/mstile-144x144.png">
+<meta name="theme-color" content="#ffd700">
+      
+  <!-- build:css styles/main.css -->
+  <link rel="stylesheet" href="styles/main.css">
+  <!-- endbuild-->
+
+  <!-- build:js bower_components/webcomponentsjs/webcomponents.min.js -->
+  <script src="bower_components/webcomponentsjs/webcomponents-lite.js"></script>
+  <!-- endbuild -->
+
+  <!-- will be replaced with elements/elements.vulcanized.html -->
+  <link rel="import" href="elements/elements.html">
+  <!-- endreplace-->
+
+<!-- Open when final -->  
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="styles/pace.css">
+      
+</head>
+
+<body unresolved class="fullbleed layout vertical">
+  <template is="dom-bind" id="app">
+
+    <paper-drawer-panel id="paperDrawerPanel" forceNarrow>
+      <div drawer>
+
+        <!-- Drawer Toolbar -->
+        <paper-toolbar id="drawerToolbar">
+          <span>🎉</span>
+        </paper-toolbar>
+
+        <!-- Drawer Content -->
+          <paper-menu class="list" attr-for-selected="data-route" selected="{{route}}">
+              <a data-route="home" href="/">
+                <iron-icon icon="home"></iron-icon>
+                <span>Home</span>
+              </a>
+
+              <a data-route="help" href="/help">
+                <iron-icon icon="info"></iron-icon>
+                <span>Help</span>
+              </a>
+
+              <a data-route="contact" href="/contact">
+                <iron-icon icon="mail"></iron-icon>
+                <span>Contact</span>
+              </a>
+          </paper-menu>
+      </div>
+      <paper-header-panel main>
+        <!-- Main Toolbar -->
+        <paper-toolbar id="mainToolbar" style="box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0), 0 2px 9px 1px rgba(0, 0, 0, 0), 0 4px 2px -2px rgba(0, 0, 0, 0)">
+          <paper-icon-button icon="menu" paper-drawer-toggle></paper-icon-button>
+          <span class="flex"></span>
+
+          <!-- Toolbar icons -->
+          <paper-icon-button icon="more-vert"></paper-icon-button>
+          <div class="middle"></div>
+        </paper-toolbar>
+
+        <!-- Main Content -->
+          <iron-pages attr-for-selected="data-route" selected="{{route}}">
+
+        <!--HOME-->
+            <section data-route="home">
+                <my-salam></my-salam>
+                <div class="horizontal  layout wrap  center-justified" style="height: 80vh; margin-top: 33vh">
+                    <instagram-gallery></instagram-gallery>
+                    <my-email></my-email>
+                    <div class="berdua">
+                        <majlis-bersanding></majlis-bersanding>
+                        <my-bertandang></my-bertandang>
+                    </div>
+                </div>
+            </section>
+
+            <section data-route="help">
+              <paper-material elevation="1">
+                <h2 class="paper-font-display2">Nak tido</h2>
+                <p>Nak tido</p>
+                <p><a href="/help/map">Map</a></p>
+              </paper-material>
+            </section>
+
+            <section data-route="help-info">
+              <paper-material elevation="1">
+                <h2 class="paper-font-display2">
+                Nak tido:<span>{{params.name}}</span>
+                </h2>
+                <div>Nak tido <span>{{params.name}}</span> Nak tido</div>
+              </paper-material>
+            </section>
+
+            <section data-route="contact">
+              <paper-material elevation="1">
+                <h2 class="paper-font-display2">Nak tido</h2>
+                <p>Nak tido</p>
+              </paper-material>
+            </section>
+
+          </iron-pages>
+          </paper-header-panel>
+    </paper-drawer-panel>
+
+  </template>
+
+  <!-- build:js scripts/app.js -->
+  <script src="scripts/app.js"></script>
+  <script src="scripts/pace.min.js"></script>
+  <!-- endbuild-->
+    
+  
+      <script type="text/javascript">(function(d,e,j,h,f,c,b){d.GoogleAnalyticsObject=f;d[f]=d[f]||function(){(d[f].q=d[f].q||[]).push(arguments)},d[f].l=1*new Date();c=e.createElement(j),b=e.getElementsByTagName(j)[0];c.async=1;c.src=h;b.parentNode.insertBefore(c,b)})(window,document,"script","//www.google-analytics.com/analytics.js","ga");ga("create","UA-47488919-10","auto");ga("send","pageview");</script>
+
+    
+</body>
+
+</html>
