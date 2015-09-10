@@ -1,0 +1,43 @@
+<dom-module id="majlis-bersanding">
+    <style>
+        :root {display: block}
+        .kad-sendiri {max-width: 200px; max-height: 400px; height: 100%; margin-top: 0; border-radius: 4px; background: rgba(0, 0, 0, 0.6);color: #fff;
+            -webkit-box-shadow: 0 0 10px 0 rgba(0,0,0,0.3);
+box-shadow: 0 0 10px 0 rgba(0,0,0,0.3);
+        background: url(/images/walimatul_urus_aween_afiq_xilantra.jpg) no-repeat;
+        background-size: cover
+        }
+        
+        @media (max-width: 579px) {
+        .kad-sendiri {margin-top: 20px}
+      }
+    </style>
+    <template>
+        <div class="kad-sendiri" style="text-align: left; padding: 20px">
+            <h2>13 September!</h2>
+            <div class="card-content">
+                Tema, aturcara serta peta untuk majlis bersanding kami di BTS.
+            </div>
+            <br>
+            <div class="card-actions">
+                <paper-button id="my-button">Ok go!</paper-button>
+            </div>
+        </div>
+    </template>
+</dom-module>
+
+<script>
+  (function() {
+    Polymer({
+      is: 'majlis-bersanding',
+
+      properties: {
+        greeting: {
+          type: String,
+          notify: true
+        }
+      }
+    });
+    })();
+  </script>
+
