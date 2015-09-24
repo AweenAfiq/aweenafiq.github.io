@@ -5,7 +5,6 @@ body {
     background-size: cover;
     color: #333
 }
-paper-button:hover {color: pink}
 #mainToolbar {background: transparent} 
 #my-button::shadow paper-ripple, #my-button, paper-icon-button::shadow paper-ripple, paper-button {color: gold}
 paper-button {text-align: center}
