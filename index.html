@@ -5,11 +5,19 @@
     <meta name="description" content="Wedding website for Afiq Xilantra &amp; Aween">
     <meta name="author" content="Afiq Xilantra">
     <!-- FB -->
+<<<<<<< HEAD
     <meta property="og:url" content="http://aweenafiq.com">
     <meta property="og:type" content="website">
     <meta property="og:title" content="Walimatul Urus - Afiq &amp; Aween">
     <meta property="og:description" content="Website untuk walimatul urus Afiq &amp; Aween!">
     <meta property="og:image" content="http://aweenafiq.com/images/hero-bg.jpg">
+=======
+    <meta property="og:url"           content="http://aweenafiq.com"/>
+    <meta property="og:type"          content="website"/>
+    <meta property="og:title"         content="Walimatul Urus - Afiq & Aween"/>
+    <meta property="og:description"   content="Website untuk walimatul urus Afiq & Aween!"/>
+    <meta property="og:image"         content="http://aweenafiq.com/images/hero-bg.jpg"/>
+>>>>>>> master
             
     <link rel="icon" href="favicon.ico">
     <title>✨Walimatul Urus - Afiq &amp; Aween</title>
@@ -11494,14 +11502,14 @@ paper-menu a {
       app.route = 'home';
     });
 
-    page('/help', function () {
-      app.route = 'help';
-    });
+//    page('/help', function () {
+  //    app.route = 'help';
+    //});
 
-    page('/help/:name', function (data) {
-      app.route = 'help-info';
-      app.params = data.params;
-    });
+//    page('/help/:name', function (data) {
+  //    app.route = 'help-info';
+    //  app.params = data.params;
+    // });
 
     page('/contact', function () {
       app.route = 'contact';
@@ -15444,7 +15452,7 @@ box-shadow: 0 0 10px 0 rgba(0,0,0,0.3);
                 <span>Home</span>
               </a>
 
-              <a data-route="help" href="/help">
+              <a href="/help" title="Help">
                 <iron-icon icon="info"></iron-icon>
                 <span>Help</span>
               </a>
@@ -15467,7 +15475,7 @@ box-shadow: 0 0 10px 0 rgba(0,0,0,0.3);
         </paper-toolbar>
 
         <!-- Main Content -->
-          <iron-pages attr-for-selected="data-route" selected="{{route}}">
+          <iron-pages attr-for-selected="data-route" selected="home">
 
         <!--HOME-->
             <section data-route="home">
@@ -15482,15 +15490,26 @@ box-shadow: 0 0 10px 0 rgba(0,0,0,0.3);
                 </div>
             </section>
 
-            <section data-route="help">
+            
+
+            <!--
+<section data-route="help">
               <paper-material elevation="1">
-                <h2 class="paper-font-display2">Nak tido</h2>
-                <p>Nak tido</p>
-                <p><a href="/help/map">Map</a></p>
+                <h2 class="paper-font-display2">Parking Kenduri Afiq &amp; Aween</h2>
+                  <p>
+Lorong pertama selepas Masjid Saad Bin Abi Waqqas, Gombak, Batu 4.
+<br>
+Waze:<br>
+<a href="https://waze.to/lr/hw2864qbu1" title="Waze Link" target="_blank">https://waze.to/lr/hw2864qbu1
+</a>                   
+<br><br>
+Google Map:<br>
+<a href="https://goo.gl/maps/BUHB4UAXx4L2" title="Google Map link" target="_blank">https://goo.gl/maps/BUHB4UAXx4L2</a></p>
+              <p><a href="/help/map">Map</a></p>
               </paper-material>
             </section>
-
-            <section data-route="help-info">
+        
+<section data-route="help2-info">
               <paper-material elevation="1">
                 <h2 class="paper-font-display2">
                 Nak tido:<span>{{params.name}}</span>
@@ -15498,11 +15517,16 @@ box-shadow: 0 0 10px 0 rgba(0,0,0,0.3);
                 <div>Nak tido <span>{{params.name}}</span> Nak tido</div>
               </paper-material>
             </section>
+-->
 
             <section data-route="contact">
               <paper-material elevation="1">
-                <h2 class="paper-font-display2">Nak tido</h2>
-                <p>Nak tido</p>
+                <h2 class="paper-font-display2">Contact</h2>
+                <p>
+                    <a href="http://facebook.com/xilantra" title="Facebook">Facebook</a>
+                    <br>
+                    <a href="http://instagram.com/xilantra" title="Instagram">Instagram</a>
+                  </p>
               </paper-material>
             </section>
 
