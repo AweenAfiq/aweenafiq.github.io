@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="60px" height="40px" viewBox="0 0 60 40" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.4.2 (15857) - http://www.bohemiancoding.com/sketch -->
+    <title>eye</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="eye" sketch:type="MSLayerGroup" transform="translate(0.000000, -10.000000)">
+            <path d="M29.9726688,10.0337621 C16.7508039,10.0337621 5.35530547,17.8279743 0.120578778,29.0755627 C-0.040192926,29.4163987 -0.040192926,29.8151125 0.120578778,30.1623794 C5.35530547,41.4099035 16.7508682,49.2041801 29.9726688,49.2041801 C43.1944695,49.2041801 54.5900322,41.4099678 59.8247588,30.1623794 C59.9855305,29.8215434 59.9855305,29.4228296 59.8247588,29.0755627 C54.5900322,17.8279743 43.1945338,10.0337621 29.9726688,10.0337621 L29.9726688,10.0337621 Z M29.9726688,43.1335048 C22.5064309,43.1335048 16.4614148,37.0819936 16.4614148,29.6221865 C16.4614148,22.1559486 22.5128617,16.1109325 29.9726688,16.1109325 C37.4389068,16.1109325 43.4839228,22.1623794 43.4839228,29.6221865 C43.4839228,37.0819936 37.4324759,43.1335048 29.9726688,43.1335048 L29.9726688,43.1335048 Z" id="Shape" fill="#27CAA6" sketch:type="MSShapeGroup"></path>
+            <circle id="pupil" fill="#27CAA6" sketch:type="MSShapeGroup" cx="29.9726688" cy="29.6157556" r="8.64951768"></circle>
+            <rect id="bound" sketch:type="MSShapeGroup" x="0" y="0" width="60" height="60"></rect>
+        </g>
+    </g>
+</svg>
